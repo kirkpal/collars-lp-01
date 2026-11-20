@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO Launch: Domain anpassen
+Sitemap: https://www.example.de/sitemap.xml
