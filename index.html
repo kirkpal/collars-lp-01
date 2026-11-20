@@ -31,7 +31,7 @@ h3{font-size:21px;font-weight:600}
 p{margin:0}
 a{color:inherit}
 img,svg{max-width:100%}
-.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.wrap{max-width:1264px;margin:0 auto;padding:0 32px}
 .section{padding:88px 0}
 .center{text-align:center}
 .stack{display:flex;flex-direction:column;gap:12px}
@@ -51,18 +51,18 @@ img,svg{max-width:100%}
 .nav a{text-decoration:none}
 .nav .btn{padding:12px 24px}
 /* Hero */
-.hero{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"eyebrow img" "h1 img" "lead img" "cta img";column-gap:48px;row-gap:24px;align-content:center;align-items:center;padding-top:48px;padding-bottom:80px}
+.hero{display:grid;grid-template-columns:1.16fr 1fr;grid-template-areas:"eyebrow img" "h1 img" "lead img" "cta img";column-gap:48px;row-gap:24px;align-content:center;align-items:center;padding-top:48px;padding-bottom:80px}
 .eyebrow{grid-area:eyebrow;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);align-self:end}
-.hero h1{grid-area:h1;font-size:56px}
+.hero h1{grid-area:h1;font-size:56px;line-height:1.1}
 .hero .lead{grid-area:lead;font-size:20px;max-width:520px}
 .hero .cta{grid-area:cta;align-self:start}
 .hero .photo{grid-area:img;min-height:440px;border-radius:32px}
 /* Stimmen */
 .stimmen{background:var(--tint);padding:88px 0}
-.track{margin-top:40px;display:flex;gap:24px;overflow-x:auto;padding:8px 32px 24px;scrollbar-width:thin}
-.track figure{flex:0 0 260px;margin:0;display:flex;flex-direction:column;gap:14px}
-.track .photo{aspect-ratio:3/4;border-radius:24px}
-.track blockquote{margin:0}
+.track{margin-top:40px;display:flex;gap:24px;overflow-x:auto;padding:8px 32px 28px;scrollbar-width:thin}
+.track figure{flex:0 0 280px;margin:0;display:flex;flex-direction:column;gap:16px}
+.track .photo{aspect-ratio:3/4;border-radius:24px;padding:24px}
+.track blockquote{margin:0;font-size:17px}
 .track figcaption{font-family:'Poppins',sans-serif;font-weight:600;font-size:15px}
 /* Schritte */
 .steps{background:#fff;padding:64px 0}
@@ -104,12 +104,14 @@ img,svg{max-width:100%}
 .sel{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
 /* Größe */
 .sizes{display:flex;flex-direction:column;gap:16px;margin-top:32px}
-.size{display:flex;flex-wrap:wrap;gap:24px;align-items:center;background:#fff;border-radius:24px;padding:24px 32px}
-.size .letter{flex:0 0 88px;width:88px;height:88px;border-radius:50%;background:var(--pink);font-family:'Poppins',sans-serif;font-weight:700;font-size:40px;display:flex;align-items:center;justify-content:center}
+.size{display:flex;flex-wrap:wrap;gap:48px;align-items:center;background:#fff;border-radius:24px;padding:24px 32px}
+.size .letter{flex:0 0 60px;width:60px;height:60px;border-radius:50%;background:var(--pink);font-family:'Poppins',sans-serif;font-weight:700;font-size:32px;display:flex;align-items:center;justify-content:center}
 .size .body{flex:1 1 420px;display:flex;flex-wrap:wrap;gap:20px 48px}
-.breeds{flex:1 1 100%;display:flex;gap:12px}
+.row{flex:1 1 100%;display:flex;gap:48px;align-items:center}
+.breeds{display:flex;gap:12px;align-items:center}
+.infos{display:flex;gap:40px;align-items:center}
 .breeds .photo{flex:0 0 112px;width:112px;height:112px;border-radius:50%;font-size:13px;line-height:1.2;padding:6px}
-.size .info{flex:1 1 160px}
+.size .info{flex:0 0 auto;white-space:nowrap}
 .size .k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
 .size .v{font-weight:600;font-size:16px}
 /* Produkt */
@@ -134,8 +136,9 @@ img,svg{max-width:100%}
 .counter{margin-left:12px;font-size:15px;font-weight:600}
 /* Warum */
 .why{background:var(--tint)}
-.why .wrap{display:flex;flex-direction:column;gap:20px}
-.why .photo{min-height:320px;border-radius:32px;margin-top:12px}
+.why .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.why .txt{flex:1 1 400px;display:flex;flex-direction:column;gap:20px}
+.why .photo{flex:1 1 400px;min-height:320px;border-radius:32px;padding:32px}
 /* FAQ */
 .faq .wrap{display:flex;flex-direction:column;gap:14px}
 .faq h2{margin-bottom:14px}
@@ -173,11 +176,14 @@ details p{margin-top:16px;font-size:17px}
  h2{font-size:26px;line-height:1.25}
  h3{font-size:19px}
  .final h2{font-size:28px}
+ .d-only{display:none}.m-only{display:inline}
+ .site-header .wrap{padding-top:16px;padding-bottom:16px}
  .nav a:not(.btn){display:none}
- .hero{grid-template-columns:1fr;grid-template-areas:"eyebrow" "h1" "img" "lead" "cta";row-gap:20px;padding-top:24px;padding-bottom:48px}
+ .hero{grid-template-columns:1fr;grid-template-areas:"img" "eyebrow" "h1" "lead" "cta";row-gap:20px;padding-top:8px;padding-bottom:48px}
  .hero h1{font-size:34px;line-height:1.1}
  .hero .lead{font-size:17px}
- .hero .photo{min-height:260px;border-radius:24px}
+ .hero .photo{min-height:240px;border-radius:24px}
+ .eyebrow{align-self:start}
  .track{padding:8px 20px 24px}
  .track figure{flex-basis:240px}
  .cards{gap:12px}
@@ -186,9 +192,15 @@ details p{margin-top:16px;font-size:17px}
  .card p{font-size:13px;line-height:1.45}
  .card .btn{font-size:14px;padding:8px 16px}
  .preview{padding:16px;border-radius:24px}
+ .shp{width:58px;height:58px;border-radius:16px}.shp svg{width:36px;height:36px}
+ .opts{gap:10px}
  .cfg-grid{margin-top:28px}
  .size{padding:20px;gap:16px}
- .size .letter{flex-basis:72px;width:72px;height:72px;font-size:32px}
+ .row{flex-wrap:wrap;gap:16px}
+  .size .info{white-space:normal}
+ .size .letter{flex-basis:44px;width:44px;height:44px;font-size:22px}
+ .size.xs{display:none}
+ .infos{flex-direction:column;align-items:flex-start;gap:12px}
  .breeds{gap:8px}
  .breeds .photo{flex:0 0 96px;width:96px;height:96px;font-size:12px}
  .prod{gap:28px}
@@ -199,6 +211,7 @@ details p{margin-top:16px;font-size:17px}
  details{padding:16px 18px;border-radius:16px}
  summary h3{font-size:17px}
 }
+.m-only{display:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slides,.btn,.ic{transition:none}}
 </style>
 </head>
@@ -209,8 +222,8 @@ details p{margin-top:16px;font-size:17px}
 <div class="wrap">
 <a class="logo" href="#top">[Marke]</a>
 <nav class="nav" aria-label="Hauptnavigation">
+<a href="#warum">Vorteile</a>
 <a href="#so-gehts">So geht's</a>
-<a href="#beliebt">Designs</a>
 <a href="#groesse">Größe finden</a>
 <a href="#faq">FAQ</a>
 <a class="btn" href="#konfigurator">Jetzt gestalten</a>
@@ -230,7 +243,7 @@ details p{margin-top:16px;font-size:17px}
 <section class="stimmen" id="stimmen" aria-labelledby="h-stimmen">
 <div class="wrap center stack">
 <h2 id="h-stimmen">Echte Hundemenschen, echte Fellnasen</h2>
-<p>Wische oder scrolle durch die Geschichten unserer Kundschaft. Mit der Maus oder dem Finger pausiert der Lauf.</p>
+<p><span class="d-only">Wische oder scrolle durch die Geschichten unserer Kundschaft. Mit der Maus oder dem Finger pausiert der Lauf.</span><span class="m-only">Wische durch die Geschichten unserer Kundschaft. Mit dem Finger pausiert der Lauf.</span></p>
 </div>
 <div class="track" id="track" role="region" aria-label="Kundenstimmen" tabindex="0">
 <!-- 6 Kundenstimmen: Foto als images/kunde-1.jpg ... kunde-6.jpg (Hochformat 3:4) -->
@@ -265,7 +278,7 @@ details p{margin-top:16px;font-size:17px}
 <div class="wrap">
 <div class="center stack">
 <h2 id="h-pop">Unsere beliebtesten Halsband-Designs</h2>
-<p>Nicht sicher, wo du anfangen sollst? Lass dich von den Lieblingen unserer Kundschaft inspirieren.</p>
+<p><span class="d-only">Nicht sicher, wo du anfangen sollst? Lass dich von den Lieblingen unserer Kundschaft inspirieren.</span><span class="m-only">Lass dich von den Lieblingen unserer Kundschaft inspirieren.</span></p>
 </div>
 <div class="cards" id="cards"></div>
 </div>
@@ -330,7 +343,7 @@ details p{margin-top:16px;font-size:17px}
 <li>Gravur Rückseite: Telefonnummer oder Wunschtext</li>
 </ul>
 <p class="price">[Preis] €</p>
-<div><a class="btn order-link" href="#">Jetzt bestellen</a></div>
+<div><a class="btn order-link" href="#">In den Warenkorb</a></div>
 <p style="font-size:15px">Versand ab [X] Werktagen · [Versandkosten / Gratisversand ab X €]</p>
 </div>
 </div>
@@ -348,10 +361,12 @@ details p{margin-top:16px;font-size:17px}
 </div>
 </section>
 
-<section class="section why" aria-labelledby="h-why">
+<section class="section why" id="warum" aria-labelledby="h-why">
 <div class="wrap">
+<div class="txt">
 <h2 id="h-why">Warum handgemachte Hundehalsbänder die bessere Wahl sind</h2>
-<p style="max-width:760px">Weil man den Unterschied sieht, fühlt und sogar hört. Wir arbeiten in kleinen Stückzahlen, kümmern uns um jede Naht und jede Kante und verkaufen nur, was wir auch unseren eigenen Fellnasen anlegen würden.</p>
+<p>Weil man den Unterschied sieht, fühlt und sogar hört. Wir arbeiten in kleinen Stückzahlen, kümmern uns um jede Naht und jede Kante und verkaufen nur, was wir auch unseren eigenen Fellnasen anlegen würden.</p>
+</div>
 <div class="photo" role="img" aria-label="Hände bei der Arbeit am Halsband in der Werkstatt" style="background-image:url('images/werkstatt.jpg')">[Werkstatt-Foto: images/werkstatt.jpg]</div>
 </div>
 </section>
@@ -473,7 +488,7 @@ function build(){
  // Größen
  var rows=[['XS'],['S'],['M'],['L']];
  rows.forEach(function(r){
-  var d=el('div',{class:'size'},'<span class="letter">'+r[0]+'</span><div class="body"><div class="breeds"><div class="photo" role="img" aria-label="Hunderasse 1">[Rasse 1]</div><div class="photo" role="img" aria-label="Hunderasse 2">[Rasse 2]</div><div class="photo" role="img" aria-label="Hunderasse 3">[Rasse 3]</div></div><div class="info"><div class="k">Hunderasse</div><div class="v">[Rassebeispiele]</div></div><div class="info"><div class="k">Halsumfang ca.</div><div class="v">[XX–XX cm]</div></div><div class="info"><div class="k">Gewicht ca.</div><div class="v">[XX–XX kg]</div></div></div>');
+  var d=el('div',{class:'size'+(r[0]==='XS'?' xs':'')},'<span class="letter">'+r[0]+'</span><div class="body"><div class="row"><div class="breeds"><div class="photo" role="img" aria-label="Hunderasse 1">[Rasse 1]</div><div class="photo" role="img" aria-label="Hunderasse 2">[Rasse 2]</div><div class="photo" role="img" aria-label="Hunderasse 3">[Rasse 3]</div></div><div class="infos"><div class="info"><div class="k">Hunderasse</div><div class="v">[Rassebeispiele]</div></div><div class="info"><div class="k">Halsumfang ca.</div><div class="v">[XX–XX cm]</div></div><div class="info"><div class="k">Gewicht ca.</div><div class="v">[XX–XX kg]</div></div></div></div></div>');
   $('sizes').appendChild(d);
  });
  render();
